@@ -30,6 +30,7 @@ return <>
         }>Aptitude</a>
         {enableAptitude && <AptitudeContainer/>}
     </div>
+    
 
     
 </div>
