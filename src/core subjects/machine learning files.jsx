@@ -2,8 +2,12 @@ const MachineLearningFiles = ()=>{
     return<>
     <div className="containe shadow-lg">
         <ol>
-        <li>
+<li>
     <span>Overview of ML : 
+    <a href="./media/Machine Learning/ML overview.pdf" target="_blank">click here</a></span>
+</li>
+<li>
+    <span>Introduction of ML : 
     <a href="./media/Machine Learning/UNIT 1 chapter 1 Introduction.pptx" target="_blank">click here</a></span>
 </li>
 <li>

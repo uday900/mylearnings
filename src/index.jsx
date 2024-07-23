@@ -2,9 +2,12 @@ import { useState } from "react";
 import './index.css';
 import CourseSubjectContainer from "./core subjects/core subjects container";
 import AptitudeContainer from "./aptitude/aptitide container";
+import InterviewGuideContainer from "./interview guide/interview guide container";
+
 const HomePage = ()=>{
 const [enableCoreTopics, setenableCoreTopics] = useState(true);
 const [enableAptitude, setenableAptitude] = useState(true);
+const [enableInterviewGuide, setenableInterviewGuide] = useState(true);
 
 return <>
 <div className="container-fuild">
@@ -29,6 +32,14 @@ return <>
             }
         }>Aptitude</a>
         {enableAptitude && <AptitudeContainer/>}
+    </div>
+
+    <div className="container shadow-sm p-3">
+        <a href="#" className="h4"
+        onClick={()=>{setenableInterviewGuide(enableInterviewGuide ? false : true)}}>
+            Interview Guide
+        </a>
+        {enableInterviewGuide && <InterviewGuideContainer/>}
     </div>
     
 
