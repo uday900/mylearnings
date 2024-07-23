@@ -6,14 +6,16 @@ const InterviewGuideContainer = ()=>{
 const [enableWebsiteLinks, setenableWebsiteLinks] = useState(false);
 return <>
 {/* subject name */}
-<div className="container p-2 shadow">
-    {/* chapters */}
-    <a href="#"
-        onClick={()=>{
-            setenableWebsiteLinks(enableWebsiteLinks ? false : true);
-        }
-    }>  Websites</a>
-    {enableWebsiteLinks && <WebsiteLinks/>}<br />
+<div className="container shadow">
+    <div className="list-group">
+        <a href="#" className="list-group-item"
+            onClick={()=>{
+                setenableWebsiteLinks(enableWebsiteLinks ? false : true);
+            }
+        }>  Websites</a>
+        {enableWebsiteLinks && <WebsiteLinks/>}
+    </div>
+
     
     {/* pdf's */}
     <a href="./media/Interview Materials/Java-Interview-Questions.pdf" target="_blank">Java interview questions</a> <br />

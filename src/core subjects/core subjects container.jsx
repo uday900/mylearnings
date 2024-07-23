@@ -8,31 +8,31 @@ const [enableJava, setenableJava] = useState(false);
 const [enableReactjs, setenableReactjs] = useState(false);
 const [enableML, setenableML] = useState(false);
 return <>
-<div className="container shadow p-2">
-            {/* subject 1 */}
-            <a href="#"
-                onClick={()=>{
-                    setenableJava(enableJava ? false : true);
-                }
-            }>  Java</a>
-            {enableJava && <JavaFiles/>}<br />
+<div className="container shadow">
+    <div className="list-group">
+        <a href="#" className="list-group-item"
+        onClick={()=>{
+            setenableJava(enableJava ? false : true);
+        }}>Java Programing</a>
+        {enableJava && <JavaFiles/>}
 
-            {/* subject 2 */}
-            <a href="#"
+        <a href="#" className="list-group-item"
                 onClick={()=>{
                     setenableReactjs(enableReactjs ? false : true);
                 }
             }>  React.js</a>
-            {enableReactjs&& <ReactjsFiles/>} <br />
-
-            {/* subject -3 */}
-            <a href="#"
-                onClick={()=>{
-                    setenableML(enableML ? false : true);
-                }
-            }>  Machine Learning</a>
-            {enableML&& <MachineLearningFiles/>}
-        </div>
+        {enableReactjs&& <ReactjsFiles/>}
+        
+        <a href="#" className="list-group-item"
+            onClick={()=>{
+                setenableML(enableML ? false : true);
+            }
+        }>  Machine Learning</a>
+        {enableML&& <MachineLearningFiles/>}
+        
+    </div>
+        
+</div>
     
     </>
 };export default CourseSubjectContainer
