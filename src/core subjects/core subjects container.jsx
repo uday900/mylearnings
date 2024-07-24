@@ -10,24 +10,27 @@ const [enableML, setenableML] = useState(false);
 return <>
 <div className="container shadow">
     <div className="list-group">
-        <a href="#" className="list-group-item"
+
+        <a href="https://drive.google.com/drive/folders/1pbl3hnNmWIqvzhm_9d8RbUvjzbmi9ao4?usp=drive_link" target="_blank" className="list-group-item">Python</a>
+
+        <div href="#" className="list-group-item btn btn-light"
         onClick={()=>{
             setenableJava(enableJava ? false : true);
-        }}>Java Programing</a>
+        }}>Java Programing</div>
         {enableJava && <JavaFiles/>}
 
-        <a href="#" className="list-group-item"
+        <div className="list-group-item btn btn-light"
                 onClick={()=>{
                     setenableReactjs(enableReactjs ? false : true);
                 }
-            }>  React.js</a>
+            }>  React.js</div>
         {enableReactjs&& <ReactjsFiles/>}
         
-        <a href="#" className="list-group-item"
+        <div href="#" className="list-group-item btn btn-light"
             onClick={()=>{
                 setenableML(enableML ? false : true);
             }
-        }>  Machine Learning</a>
+        }>  Machine Learning</div>
         {enableML&& <MachineLearningFiles/>}
         
     </div>
