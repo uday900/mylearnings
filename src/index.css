@@ -6,8 +6,11 @@ a:focus{
     color: blueviolet;
 }
 .list-group-item{
-    border: none;
     border-radius: 10px;
+    border: none;
+}
+.list-group-item:hover{
+    background: rgba(0, 0, 0, 0.1);
 }
 .btn-light{
     text-align: left;

@@ -11,7 +11,8 @@ return <>
 <div className="container shadow">
     <div className="list-group">
 
-        <a href="https://drive.google.com/drive/folders/1pbl3hnNmWIqvzhm_9d8RbUvjzbmi9ao4?usp=drive_link" target="_blank" className="list-group-item">Python</a>
+        <a href="https://drive.google.com/drive/folders/1pbl3hnNmWIqvzhm_9d8RbUvjzbmi9ao4?usp=drive_link" 
+        target="_blank" className="list-group-item">Python</a>
 
         <div href="#" className="list-group-item btn btn-light"
         onClick={()=>{
@@ -19,12 +20,29 @@ return <>
         }}>Java Programing</div>
         {enableJava && <JavaFiles/>}
 
+        <a href="https://drive.google.com/drive/folders/1SsTSsHSPWQAYNMbfKjDZk5cx9zB2H0tk?usp=drive_link" 
+        target="_blank" className="list-group-item">Data Structures</a>
+
+        <a href="https://drive.google.com/drive/folders/1y7fZewbUo0fmQp8dg-jGKfTgVPKtbR6a?usp=drive_link" 
+        target="_blank" className="list-group-item">Data Structures & Algorithms</a>
+
+        <a href="https://drive.google.com/drive/folders/1zoCynkviHq7HTigcPqAIxXpRRLinnB9t?usp=drive_link" 
+        target="_blank" className="list-group-item">DBMS & SQL</a>
+
         <div className="list-group-item btn btn-light"
                 onClick={()=>{
                     setenableReactjs(enableReactjs ? false : true);
                 }
             }>  React.js</div>
         {enableReactjs&& <ReactjsFiles/>}
+
+        <a href="https://drive.google.com/drive/folders/1YCWUTUJNI4Bt4OYDoQSwxl_FuYhNuXDQ?usp=drive_link" 
+        target="_blank" className="list-group-item">Web Technologies</a>
+
+        
+
+        <a href="https://drive.google.com/drive/folders/1wusT6w26PUNpepVgknjapcxB2D8R0V3B?usp=drive_link" 
+        target="_blank" className="list-group-item">Numpy & Pandas</a>
         
         <div href="#" className="list-group-item btn btn-light"
             onClick={()=>{
@@ -32,7 +50,19 @@ return <>
             }
         }>  Machine Learning</div>
         {enableML&& <MachineLearningFiles/>}
-        
+
+        <a href="https://drive.google.com/drive/folders/1HtgZbdU22Y94lwJyf02yNtfZ6fY4J92R?usp=drive_link" 
+        target="_blank" className="list-group-item">Artificial Intelligence</a>
+
+        <a href="https://drive.google.com/drive/folders/1QNAEHiAUUh14wJ1_mywTskyjJBztzjSB?usp=drive_link" 
+        target="_blank" className="list-group-item">Cloud Computing</a>
+
+        <a href="https://drive.google.com/drive/folders/1senXyLIhefXipPM83LXhWObkiJ4_5lRm?usp=drive_link" 
+        target="_blank" className="list-group-item">Compiler Design</a>
+
+        <a href="https://drive.google.com/drive/folders/18hazuI_x_RDEVKMcEDnYsrTXxTfqIZaj?usp=drive_link" 
+        target="_blank" className="list-group-item">Cyber Security</a>
+
     </div>
         
 </div>

@@ -1,6 +1,6 @@
 const MachineLearningFiles = ()=>{
     return<>
-    <div className="containe shadow-lg">
+    <div className="container border border-primary shadow-lg">
         <ol>
 <li>
     <span>Overview of ML : 
