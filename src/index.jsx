@@ -3,6 +3,7 @@ import './index.css';
 import CourseSubjectContainer from "./core subjects/core subjects container";
 import AptitudeContainer from "./aptitude/aptitide container";
 import InterviewGuideContainer from "./interview guide/interview guide container";
+import Footer from "./footer";
 
 const HomePage = ()=>{
 const [enableCoreTopics, setenableCoreTopics] = useState(true);
@@ -41,6 +42,9 @@ return <>
         </a>
         {enableInterviewGuide && <InterviewGuideContainer/>}
     </div>
+
+    {/* <Footer/> */}
+    <Footer/>
     
 
     

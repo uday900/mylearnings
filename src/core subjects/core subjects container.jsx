@@ -1,10 +1,8 @@
 import { useState } from "react";
-import JavaFiles from "./java files";
 import ReactjsFiles from "./reactjs files";
 import MachineLearningFiles from "./machine learning files";
 const CourseSubjectContainer = ()=>{
 
-const [enableJava, setenableJava] = useState(false);
 const [enableReactjs, setenableReactjs] = useState(false);
 const [enableML, setenableML] = useState(false);
 return <>
@@ -14,11 +12,7 @@ return <>
         <a href="https://drive.google.com/drive/folders/1pbl3hnNmWIqvzhm_9d8RbUvjzbmi9ao4?usp=drive_link" 
         target="_blank" className="list-group-item">Python</a>
 
-        <div href="#" className="list-group-item btn btn-light"
-        onClick={()=>{
-            setenableJava(enableJava ? false : true);
-        }}>Java Programing</div>
-        {enableJava && <JavaFiles/>}
+        <a href="https://drive.google.com/drive/folders/16HV38QZRWFnTlQv1t3eUkjIvniHXvFcc?usp=drive_link" className="list-group-item btn btn-light" target = "_black">Java Programing</a>
 
         <a href="https://drive.google.com/drive/folders/1SsTSsHSPWQAYNMbfKjDZk5cx9zB2H0tk?usp=drive_link" 
         target="_blank" className="list-group-item">Data Structures</a>
@@ -44,12 +38,8 @@ return <>
         <a href="https://drive.google.com/drive/folders/1wusT6w26PUNpepVgknjapcxB2D8R0V3B?usp=drive_link" 
         target="_blank" className="list-group-item">Numpy & Pandas</a>
         
-        <div href="#" className="list-group-item btn btn-light"
-            onClick={()=>{
-                setenableML(enableML ? false : true);
-            }
-        }>  Machine Learning</div>
-        {enableML&& <MachineLearningFiles/>}
+        <a href="https://drive.google.com/drive/folders/1ealpMjT_5pJIJZz_NRslbxybI7AZGCsX?usp=drive_link" target="_blank" className="list-group-item btn btn-light"
+        >  Machine Learning</a>
 
         <a href="https://drive.google.com/drive/folders/1HtgZbdU22Y94lwJyf02yNtfZ6fY4J92R?usp=drive_link" 
         target="_blank" className="list-group-item">Artificial Intelligence</a>
